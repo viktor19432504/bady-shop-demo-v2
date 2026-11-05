@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>АБ-Витамины · витамины и БАДы с доставкой</title>
+<meta name="description" content="Витамины и БАДы с доставкой в Москве: состав, способ приёма и противопоказания у каждой позиции, цена финальная, фото заказа со сроком годности перед отправкой.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="АБ-Витамины">
+<meta property="og:title" content="Витамины для всей семьи с доставкой по Москве">
+<meta property="og:description" content="Закончилась баночка – позвоните, повторим заказ. Состав и противопоказания называем до оплаты, срок годности видно на фото заказа.">
+<meta property="og:url" content="{{адрес сайта}}">
+<meta property="og:image" content="{{адрес сайта}}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%232f6b4d%27/%3E%3Crect x=%2711%27 y=%275%27 width=%2710%27 height=%2722%27 rx=%275%27 fill=%27%23f8f1ed%27 transform=%27rotate(35 16 16)%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"АБ-Витамины","description":"Витамины и БАДы с доставкой: состав и противопоказания у каждой позиции, цена финальная, фото заказа со сроком годности перед отправкой.","url":"{{адрес сайта}}","image":"{{адрес сайта}}/assets/og.jpg","telephone":"+74999852524","openingHours":"09:00-21:00","areaServed":"Москва","address":{"@type":"PostalAddress","streetAddress":"проспект Мира, дом 85","addressLocality":"Москва","addressCountry":"RU"}}
+</script>
+<style>
+  /* ---- тема: шесть цветов, два шрифта (палитра А «пудра + лес», светлая) ---- */
+  .v-page {
+    --v-canvas: #f8f1ed; --v-surface: #fffaf8;
+    --v-ink: #1d2a22; --v-ink-soft: #5a675f;          /* 5,3:1 на холсте */
+    --v-accent: #2f6b4d; --v-accent-ink: #f8f3ef;     /* 5,6:1 на холсте, 5,7:1 текст на кнопке */
+    --v-font-display: "Tenor Sans", "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+    --v-font-text: "Onest", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 74 44 40;
+    /* светлый холст: тени легче, кромка карточек световая, а не тёмная */
+    --v-e1: 0 1px 2px rgb(var(--v-shadow-color) / .08), 0 8px 22px rgb(var(--v-shadow-color) / .10);
+    --v-e2: 0 2px 6px rgb(var(--v-shadow-color) / .10), 0 22px 54px rgb(var(--v-shadow-color) / .16);
+    --v-edge: inset 0 1px 0 rgb(255 255 255 / .7);
+    --v-radius: 12px;
+    --v-section: clamp(3.5rem, 8vw, 7rem);
+    --v-display-weight: 400;
+    --v-track-tight: -0.008em;
+    --v-track-normal: 0;
+  }
+  html, body { background: #f8f1ed; }
+  /* фото тёмные: первый экран и доставка остаются тёмными внутри, текст на них светлый */
+  .v-page #top, .v-page #kchasu { --v-ink: #f4ece7; --v-ink-soft: #c3c9be; --v-accent: #9fd0b2; --v-accent-ink: #10251a; --v-surface: #182520;
+    --v-shadow-color: 2 6 4; --v-edge: inset 0 1px 0 rgb(244 236 231 / .08); color: var(--v-ink); }
+  .v-page .v-display { font-weight: 400; }
+  .v-page .v-display--xl { line-height: 1.04; }
+  .v-page .v-lede { font-weight: 400; line-height: 1.45; }
+  .v-page .v-label { font-weight: 500; }
+  .v-page .v-btn { font-size: var(--v-t-base); font-weight: 600; }
+  .v-page [id] { scroll-margin-top: 5rem; }
+
+  /* ---- шапка: прозрачная на первом экране, плотная после ------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
+    padding: var(--v-3) var(--v-gutter); gap: var(--v-4);
+    background: rgb(248 241 237 / .9); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); /* плотная сразу: под шапкой тёмное фото */
+    transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: rgb(248 241 237 / .88); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-size: var(--v-t-lg); letter-spacing: .02em; text-decoration: none;
+    display: inline-flex; align-items: center; gap: .5em; min-height: 44px; white-space: nowrap; }
+  /* знак: капсула из двух половинок */
+  .bar__mark i { width: .48em; height: 1.05em; border-radius: 999px; background: linear-gradient(var(--v-accent) 50%, var(--v-ink-soft) 50%); display: inline-block; transform: rotate(35deg); }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 500; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
+  @media (max-width: 700px) {
+    .bar__tel { display: none; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; font-size: .9rem; }
+    .bar__right { gap: var(--v-2); }
+    .bar__mark { font-size: 1.15rem; }
+  }
+  @media (max-width: 860px) { .bar.is-scrolled { background: rgb(248 241 237 / .94); } }
+
+  /* ---- hero (вариант А): полка с баночками едет, переписка с магазином вторым планом ---- */
+  .hero__back > img { max-width: none; width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 80% 50%; }
+  .hero__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: radial-gradient(120% 95% at 0% 100%, rgb(15 26 20 / .92) 0%, rgb(15 26 20 / .6) 38%, transparent 70%); }
+  .hero__floor { position: absolute; inset: auto 0 0 0; height: 22%; z-index: 2; pointer-events: none;
+    background: linear-gradient(to top, #f8f1ed 0%, rgb(248 241 237 / .35) 45%, transparent 100%); }
+  /* карточка-переписка: «заказ собран, вот фото» – «Спасибо, всё верно!» */
+  .hero__chat { --cw: clamp(230px, 18vw, 272px); }
+  .chat { position: absolute; right: clamp(1.5rem, 5vw, 6rem); top: clamp(5.5rem, 12vh, 8rem); width: var(--cw);
+    padding: .55rem .6rem .7rem; border-radius: calc(var(--v-radius) - 2px); background: var(--v-surface); box-shadow: 0 30px 60px rgb(2 6 4 / .6), inset 0 1px 0 rgb(244 236 231 / .06); transform: rotate(-3deg); font-size: .84rem; line-height: 1.35; color: var(--v-ink); }
+  .chat__head { display: flex; align-items: center; gap: .5rem; padding: .1rem .15rem .5rem; border-bottom: 1px solid var(--v-hair); margin-bottom: .55rem; }
+  .chat__ava { flex: none; width: 1.7rem; height: 1.7rem; border-radius: 50%; background: var(--v-accent); display: grid; place-items: center; }
+  .chat__ava i { width: .42rem; height: .9rem; border-radius: 999px; background: var(--v-accent-ink); transform: rotate(35deg); }
+  .chat__who { display: grid; line-height: 1.2; }
+  .chat__who b { font-weight: 500; }
+  .chat__who span { font-size: .7rem; color: var(--v-accent); }
+  .chat__msg { position: relative; max-width: 90%; padding: .45rem .6rem 1.05rem; border-radius: .95rem .95rem .95rem .3rem; background: #0b130e; }
+  .chat__msg img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 60%; border-radius: .6rem; margin-bottom: .4rem; }
+  .chat__msg time { position: absolute; right: .6rem; bottom: .3rem; font-size: .62rem; color: var(--v-ink-soft); }
+  .chat__msg--me { margin: .45rem 0 0 auto; width: max-content; padding-right: 4.6rem; padding-bottom: .45rem; border-radius: .95rem .95rem .3rem .95rem; background: rgb(159 208 178 / .18); }
+  .chat__msg--me time { bottom: .42rem; color: var(--v-accent); }
+  @media (max-height: 760px) and (min-width: 861px) { .chat__msg img { aspect-ratio: 16 / 9; } .chat { font-size: .76rem; } }
+  .hero__copy { bottom: clamp(5rem, 14vh, 9rem); max-width: min(46rem, 60vw); }
+  .hero__label { display: block; margin-bottom: var(--v-4); color: var(--v-accent); }
+  .hero__copy .v-display { font-size: clamp(2.2rem, 1rem + 2.6vw, 3.6rem); max-width: 17ch; }
+  .hero__copy .v-lede { margin-top: var(--v-5); color: var(--v-ink); max-width: 40ch; }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .hero__tel { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 500; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  @media (max-height: 760px) and (min-width: 861px) { .hero__copy .v-display { font-size: var(--v-t-2xl); } .hero__copy { bottom: clamp(3.5rem, 10vh, 6rem); } }
+  @media (max-width: 860px) {
+    .hero__back > img { width: 100%; height: calc(100% - 26vh); left: 0; top: 26vh; object-position: 76% 50%; } /* кадр под текстом: баночки не прячутся под оффером */
+    .hero__scrim { background: linear-gradient(to bottom, rgb(15 26 20) 0%, rgb(15 26 20) 30%, rgb(15 26 20 / .84) 46%, transparent 68%); } /* край кадра (26vh) под плотной частью */
+    .hero__floor { height: 12%; }
+    .hero__chat { --cw: min(56vw, 230px); }
+    .chat { right: 4vw; top: auto; bottom: 4vh; transform: rotate(-2.5deg); font-size: .76rem; }
+    .chat__msg img { aspect-ratio: 16 / 10; }
+    .hero__copy { top: clamp(5.5rem, 11vh, 7rem); bottom: auto; max-width: none; }
+    .hero__copy .v-display { font-size: var(--v-t-2xl); max-width: none; }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-4); }
+    .hero__label { margin-bottom: var(--v-3); }
+    .hero__cta { margin-top: var(--v-5); gap: var(--v-2) var(--v-5); }
+  }
+  @media (max-width: 600px) and (max-height: 700px) { .chat__msg img { display: none; } }
+
+  /* ---- наугад: строки-определения и поворот ---------------------------------- */
+  .poka__head { max-width: 58rem; margin-bottom: var(--v-7); }
+  .poka__head .v-body { margin-top: var(--v-4); }
+  .poka__rows li { display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .poka__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .poka__rows h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; text-wrap: balance; }
+  .poka__rows p { color: var(--v-ink-soft); max-width: 58ch; text-wrap: pretty; }
+  .turn { margin-top: var(--v-7); display: grid; grid-template-columns: minmax(14rem, .8fr) 1.6fr; gap: var(--v-2) var(--v-8); align-items: start;
+    padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1), var(--v-edge); }
+  .turn .v-label { color: var(--v-accent); padding-top: .4em; }
+  .turn__text { font-family: var(--v-font-display); font-size: var(--v-t-xl); line-height: 1.25; letter-spacing: 0; text-wrap: pretty; max-width: 34ch; }
+  @media (max-width: 860px) {
+    .poka__rows li, .turn { grid-template-columns: 1fr; gap: var(--v-2); }
+    .poka__rows h3 { font-size: var(--v-t-lg); }
+    .turn { padding: var(--v-5); }
+    .turn__text { font-size: var(--v-t-lg); }
+  }
+
+  /* ---- витаминное взаимодействие: текст и фото со шторкой ---------------------- */
+  .note { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-9); align-items: center; }
+  .note__copy .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .note__copy .v-display { margin-bottom: var(--v-5); }
+  .note__copy p { color: var(--v-ink-soft); max-width: 50ch; text-wrap: pretty; }
+  .note__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 3 / 2; box-shadow: var(--v-e2), var(--v-edge); }
+  .note__fig img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .note { grid-template-columns: 1fr; gap: var(--v-6); } .note__fig { order: -1; } .note__copy p { font-size: .95rem; } }
+
+  /* ---- фирменный ход 1: заказ собирается веером ------------------------------ */
+  .sb { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto 1fr auto; column-gap: var(--v-8); height: 100%;
+    padding: clamp(4.5rem, 12vh, 7rem) var(--v-gutter) clamp(2.5rem, 8vh, 5rem); }
+  .sb__head { grid-column: 1; max-width: 34rem; }
+  .sb__head .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .sb__rep { grid-column: 1; grid-row: 2; position: relative; align-self: center; min-height: 12rem; }
+  .sb__rep > div { position: absolute; left: 0; top: 0; max-width: 32rem; }
+  .sb__step { display: inline-flex; align-items: center; gap: .55em; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); font-weight: 500; margin-bottom: var(--v-3); }
+  .sb__step i { width: .6em; height: .6em; border-radius: 50%; background: var(--v-accent); }
+  .sb__rep h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-2xl); line-height: 1.05; letter-spacing: 0; text-wrap: balance; margin-bottom: var(--v-3); }
+  .sb__rep p { color: var(--v-ink-soft); max-width: 44ch; text-wrap: pretty; }
+  .sb__rep p b { color: var(--v-ink); font-weight: 500; }
+  .sb__after { grid-column: 1; grid-row: 3; display: flex; align-items: center; gap: var(--v-5); flex-wrap: wrap; }
+  .sb__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 34ch; }
+  .fan { grid-column: 2; grid-row: 1 / -1; position: relative; align-self: center; justify-self: center; width: min(100%, 66vh); aspect-ratio: 1 / 1; }
+  /* карточка: угол a0 в стопке → a1 в веере, сдвиг tx; k – доля раскрытия своей карточки; w – выход собранного заказа */
+  .fan__card { --k: clamp(0, calc((var(--v-p, 0) - var(--s)) / .3), 1); --w: clamp(0, calc((var(--v-p, 0) - .58) / .24), 1);
+    position: absolute; left: 27%; bottom: 6%; width: 46%; aspect-ratio: 3 / 4; transform-origin: 50% 250%; /* left = (100 − 46) / 2: у figure margin обнулён движком */
+    border-radius: var(--v-radius); overflow: hidden; background: var(--v-surface); box-shadow: 0 24px 48px rgb(74 44 40 / .22), var(--v-edge);
+    transform: translateX(calc(var(--k) * var(--tx))) rotate(calc(var(--a0) * (1 - var(--k)) + var(--a1) * var(--k))) translateY(calc(var(--k) * -6% + var(--w) * 5%));
+    opacity: calc(1 - .6 * var(--w)); will-change: transform, opacity; }
+  .fan__card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .fan__card figcaption { position: absolute; left: var(--v-4); right: var(--v-4); top: var(--v-4); font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: #f4ece7;
+    opacity: calc(var(--k) * (1 - var(--w))); text-shadow: 0 1px 8px rgb(2 6 4 / .8), 0 0 2px rgb(2 6 4 / .8); }
+  .fan__card--1 { --s: .04; --a0: 0deg; --a1: -8deg; --tx: -30%; z-index: 3; }
+  .fan__card--2 { --s: .14; --a0: 1deg; --a1: 0deg; --tx: 0%; z-index: 2; }
+  .fan__card--3 { --s: .24; --a0: -1deg; --a1: 8deg; --tx: 30%; z-index: 1; }
+  .fan__card--wrap { --k: 1; z-index: 4; transform-origin: 50% 50%; transform: translateY(calc((1 - var(--w)) * 14%)) scale(calc(.92 + .08 * var(--w))); opacity: var(--w); }
+  .fan__card--wrap figcaption { opacity: var(--w); }
+  .fan__card--2 figcaption, .fan__card--3 figcaption { text-align: right; } /* левую часть задних карточек закрывает передняя */
+  .fan__legend { position: absolute; left: 0; right: 0; bottom: -1.6rem; text-align: center; font-size: var(--v-t-xs); color: var(--v-ink-soft); letter-spacing: var(--v-track-wide); text-transform: uppercase; }
+  @media (max-width: 1100px) { .sb { column-gap: var(--v-6); } .sb__rep h3 { font-size: var(--v-t-xl); } }
+  @media (max-width: 860px) {
+    .sb { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr auto; row-gap: var(--v-3); padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) clamp(1.5rem, 5vh, 3rem); }
+    .sb__head { max-width: none; }
+    .sb__head .v-label { display: none; }
+    .sb__head .v-display { font-size: var(--v-t-xl); }
+    .fan { grid-column: 1; grid-row: 2; width: min(100%, 40vh); aspect-ratio: 4 / 3; align-self: start; }
+    .fan__card { bottom: 0; }
+    .fan__card--1 { --a1: -6deg; --tx: -24%; } .fan__card--3 { --a1: 6deg; --tx: 24%; }
+    .fan__card figcaption { display: none; }
+    .fan__legend { display: none; }
+    .sb__rep { grid-row: 3; align-self: start; min-height: 9rem; }
+    .sb__rep h3 { font-size: var(--v-t-lg); margin-bottom: var(--v-2); }
+    .sb__rep p { font-size: var(--v-t-sm); }
+    .sb__after { grid-row: 4; }
+    .sb__hint { display: none; }
+  }
+  @media (max-width: 600px) and (max-height: 760px) { .fan { width: min(100%, 34vh); } .sb__after { display: none; } }
+
+  /* ---- популярные позиции: строки, условия рядом ------------------------------ */
+  .price { display: grid; grid-template-columns: .8fr 1.4fr; gap: var(--v-9); align-items: start; }
+  .price__head .v-display { font-size: clamp(2rem, 1.2rem + 2.2vw, 3.2rem); }
+  .price__head .v-body { color: var(--v-ink-soft); margin-top: var(--v-4); }
+  .price__rows li { display: grid; grid-template-columns: 1fr auto; gap: var(--v-2) var(--v-6); padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); align-items: start; }
+  .price__rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .price__rows h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; }
+  .price__rows p { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 44ch; }
+  .price__rows .sum { grid-column: 2; grid-row: 1 / span 2; font-family: var(--v-font-display); font-size: var(--v-t-xl); line-height: 1.1; color: var(--v-accent); text-align: right; white-space: nowrap; }
+  .price__rows .sum small { display: block; font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); margin-top: .35em; }
+  .price__terms { margin-top: var(--v-6); display: grid; gap: var(--v-3); }
+  .price__terms li { display: grid; grid-template-columns: 11rem 1fr; gap: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .price__terms b { color: var(--v-ink); font-weight: 500; }
+  .price > * { min-width: 0; }
+  @media (max-width: 1000px) {
+    .price { grid-template-columns: 1fr; gap: var(--v-6); }
+    .price__rows li { grid-template-columns: 1fr; }
+    .price__rows .sum { grid-column: 1; grid-row: auto; text-align: left; white-space: normal; margin-top: var(--v-2); }
+    .price__terms li { grid-template-columns: 1fr; gap: var(--v-1); }
+  }
+
+  /* ---- фирменный ход 2: часы доставки ----------------------------------------- */
+  .kc__img img { width: 112%; height: 112%; left: -6%; top: -6%; object-fit: cover; object-position: 60% 50%; }
+  .kc__scrim { position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: radial-gradient(115% 90% at 0% 0%, rgb(15 26 20 / .94) 0%, rgb(15 26 20 / .66) 40%, transparent 72%); }
+  .kc { position: absolute; inset: 0; z-index: 3; display: grid; grid-template-columns: 1.1fr .9fr; column-gap: var(--v-8); align-items: center;
+    padding: clamp(4.5rem, 12vh, 7rem) var(--v-gutter) clamp(2.5rem, 8vh, 5rem); }
+  .kc__copy { max-width: 36rem; }
+  .kc__copy .v-label { display: block; margin-bottom: var(--v-3); color: var(--v-accent); }
+  .kc__copy .v-display--lg { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.6rem); margin-bottom: var(--v-6); }
+  .kc__rep { position: relative; min-height: 11rem; }
+  .kc__rep > div { position: absolute; left: 0; top: 0; max-width: 32rem; }
+  .kc__rep h3 { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: 0; margin-bottom: var(--v-3); text-wrap: balance; }
+  .kc__rep p { color: var(--v-ink); opacity: .9; max-width: 42ch; text-wrap: pretty; }
+  .clock { position: relative; justify-self: start; align-self: center; margin: -20vh 0 0 -15.5vw; width: min(100%, 33vh, 300px); aspect-ratio: 1 / 1; border-radius: 50%;
+    background: rgb(15 26 20 / .55); box-shadow: inset 0 0 0 2px var(--v-hair-strong), var(--v-e2); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+  .clock__tick { position: absolute; left: 50%; top: 4%; width: 2px; height: 5%; margin-left: -1px; background: var(--v-hair-strong); transform-origin: 50% 920%; transform: rotate(var(--deg)); }
+  .clock__tick--big { background: var(--v-ink); height: 7%; transform-origin: 50% 657%; }
+  .clock__mark { position: absolute; inset: 0; transform: rotate(var(--deg)); pointer-events: none; }
+  .clock__mark i { position: absolute; left: 50%; top: 7.5%; width: .9rem; height: .9rem; margin-left: -.45rem; border-radius: 50%;
+    background: var(--v-accent); box-shadow: 0 0 0 0 rgb(159 208 178 / .45); transform: scale(calc(.55 + .45 * var(--on))); opacity: calc(.4 + .6 * var(--on)); }
+  .clock__mark b { position: absolute; left: 50%; top: -2.4rem; padding: .05rem .45rem; border-radius: 1rem; background: rgb(15 26 20 / .88); transform: translateX(-50%) rotate(calc(-1 * var(--deg))); font-family: var(--v-font-text); font-weight: 500; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; white-space: nowrap;
+    color: var(--v-ink); opacity: calc(.55 + .45 * var(--on)); }
+  .clock__mark--photo { --deg: 60deg; --on: clamp(0, calc((var(--v-p, 0) - .6) * 14), 1); }
+  .clock__mark--door { --deg: 90deg; --on: clamp(0, calc((var(--v-p, 0) - .92) * 14), 1); }
+  .clock__hand { position: absolute; left: 50%; bottom: 50%; transform-origin: 50% 100%; border-radius: 999px; }
+  .clock__hand--h { width: 5px; height: 30%; margin-left: -2.5px; background: var(--v-ink); transform: rotate(calc(var(--v-p, 0) * 90deg)); }
+  .clock__hand--m { width: 3px; height: 42%; margin-left: -1.5px; background: var(--v-accent); transform: rotate(calc(var(--v-p, 0) * 1080deg)); }
+  .clock__pin { position: absolute; left: 50%; top: 50%; width: 12px; height: 12px; margin: -6px 0 0 -6px; border-radius: 50%; background: var(--v-ink); box-shadow: 0 0 0 3px var(--v-canvas); }
+  .clock__num { position: absolute; font-family: var(--v-font-display); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .clock__num--12 { left: 50%; top: 15%; transform: translateX(-50%); }
+  .clock__num--3 { right: 15%; top: 50%; transform: translateY(-50%); }
+  .clock__num--6 { left: 50%; bottom: 15%; transform: translateX(-50%); }
+  .clock__num--9 { left: 15%; top: 50%; transform: translateY(-50%); }
+  .kc__legend { position: absolute; left: 0; right: 0; bottom: auto; top: -3.4rem; text-align: center; white-space: normal; text-wrap: balance; line-height: 1.5; font-size: var(--v-t-xs); color: var(--v-ink-soft); letter-spacing: var(--v-track-wide); text-transform: uppercase; }
+  @media (max-width: 1100px) and (min-width: 861px) { .clock { margin-left: 0; } }
+  @media (max-width: 860px) {
+    .kc__scrim { background: linear-gradient(to bottom, rgb(15 26 20 / .96) 0%, rgb(15 26 20 / .86) 46%, rgb(15 26 20 / .3) 78%, transparent 100%); }
+    .kc { grid-template-columns: 1fr; grid-template-rows: auto 1fr; row-gap: var(--v-4); align-items: start; padding: clamp(4.5rem, 11vh, 6rem) var(--v-gutter) clamp(1.5rem, 5vh, 3rem); }
+    .kc__copy { max-width: none; grid-row: 1; }
+    .kc__copy .v-label { display: none; }
+    .kc__copy .v-display--lg { font-size: var(--v-t-xl); margin-bottom: var(--v-4); }
+    .kc__rep { min-height: 9rem; }
+    .kc__rep h3 { font-size: var(--v-t-lg); margin-bottom: var(--v-2); }
+    .kc__rep p { font-size: var(--v-t-sm); }
+    .clock { grid-row: 2; width: min(54vw, 30vh); justify-self: center; align-self: end; margin: 0 14vw 3vh 0; }
+    .clock__mark i { top: -.45rem; }
+    .clock__mark b { top: -2.1rem; font-size: .95rem; }
+    .kc__legend { display: none; }
+    .clock__num { font-size: .95rem; }
+  }
+  @media (max-width: 600px) and (max-height: 700px) { .clock { width: min(46vw, 26vh); } }
+
+  /* ---- повторить заказ: фото со шторкой и факты --------------------------------- */
+  .ev { display: grid; grid-template-columns: .9fr 1.1fr; gap: var(--v-9); align-items: center; }
+  .ev__fig { position: relative; border-radius: var(--v-radius); overflow: hidden; aspect-ratio: 3 / 4; box-shadow: var(--v-e2), var(--v-edge); }
+  .ev__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .ev__fig figcaption { position: absolute; left: var(--v-5); right: var(--v-5); bottom: var(--v-5); z-index: 1; font-size: var(--v-t-sm); color: #f4ece7; max-width: 30ch; }
+  .ev__fig::after { content: ""; position: absolute; inset: auto 0 0 0; height: 45%; background: linear-gradient(to top, rgb(15 26 20 / .88), rgb(15 26 20 / .3) 55%, transparent); pointer-events: none; }
+  .ev__facts li { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-1); }
+  .ev__facts li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .ev__facts strong { font-family: var(--v-font-display); font-weight: 400; font-size: var(--v-t-lg); letter-spacing: 0; line-height: 1.15; }
+  .ev__facts span { color: var(--v-ink-soft); font-size: var(--v-t-sm); max-width: 50ch; }
+  .ev .v-stack .v-display { margin-bottom: var(--v-2); }
+  .ev__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 50ch; }
+  .ev__hint b { color: var(--v-ink); font-weight: 500; }
+  @media (max-width: 860px) { .ev { grid-template-columns: 1fr; gap: var(--v-6); } .ev__fig { aspect-ratio: 4 / 3; } .ev__fig img { object-position: 50% 60%; } }
+
+  /* ---- финал: одно сообщение ----------------------------------------------------- */
+  .close { min-height: 86svh; display: grid; grid-template-rows: 1fr auto; padding: clamp(6rem, 14vh, 9rem) var(--v-gutter) 2.5rem;
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .5) * 100%), rgb(47 107 77 / .10), transparent 60%); }
+  .close__inner { align-self: center; display: grid; grid-template-columns: 1.25fr .75fr; gap: var(--v-9); align-items: start; padding-bottom: var(--v-9); }
+  .close__inner .v-display { margin-bottom: var(--v-5); }
+  .close__inner .v-lede { max-width: 40ch; }
+  .close__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .close__tel { font-family: var(--v-font-display); font-size: var(--v-t-xl); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; color: var(--v-ink); letter-spacing: .01em; }
+  .close__hint { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 44ch; }
+  .close__meta { display: grid; gap: var(--v-3); color: var(--v-ink-soft); padding-top: var(--v-2); }
+  .close__meta b { color: var(--v-ink); font-weight: 500; display: block; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; margin-bottom: .2em; }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-4); padding: var(--v-6) 0 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  .foot__bad { color: var(--v-ink); }
+  @media (max-width: 860px) {
+    .close { min-height: 0; padding: clamp(5rem, 12vh, 7rem) var(--v-gutter) calc(2.5rem + env(safe-area-inset-bottom)); }
+    .close__inner { grid-template-columns: 1fr; gap: var(--v-7); padding-bottom: var(--v-8); }
+    .close__tel { font-size: var(--v-t-lg); }
+    .foot__more { display: none; }
+  }
+  /* телефон: текст не мельче 15 px; блок в конце, чтобы не перебивался правилами компонентов */
+  @media (max-width: 860px) {
+    .hero__tel, .poka__rows p, .sb__rep p, .sb__hint, .price__rows p, .price__terms li, .kc__rep p, .ev__facts span, .ev__hint, .ev__fig figcaption,
+    .close__hint, .close__meta, .foot { font-size: .95rem; }
+    .bar .v-btn { font-size: .95rem; }
+    .v-label, .sb__step, .close__meta b, .price__rows .sum small { font-size: .95rem; }
+  }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+  <div class="v-grain" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>АБ-Витамины</a>
+    <nav class="bar__right" aria-label="Быстрые ссылки">
+      <a class="bar__tel" href="tel:+74999852524">8 499 985 25 24</a>
+      <a class="v-btn" href="tel:+74999852524" rel="noopener">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1 · УЗНАВАНИЕ (первый экран А): полка с баночками, переписка с магазином -->
+    <section id="top" data-v-act="pin" data-v-span="2" data-v-drift="#f8f1ed" aria-label="Витамины для всей семьи с доставкой">
+      <div data-v-stage>
+        <div class="v-layer hero__back" data-v-parallax="-0.6">
+          <img src="assets/hero.webp" alt="" width="1920" height="1080" fetchpriority="high">
+        </div>
+        <div class="hero__scrim" aria-hidden="true"></div>
+        <div class="v-layer hero__chat" data-v-parallax="-0.2" aria-hidden="true">
+          <div class="chat">
+            <div class="chat__head"><span class="chat__ava"><i></i></span><span class="chat__who"><b>АБ-Витамины</b><span>в сети</span></span></div>
+            <p class="chat__msg"><img src="assets/wrap-480.webp" alt="" width="480" height="640" decoding="async">Ваш заказ собран – вот фото. Срок годности видно на баночках, отправляем сегодня.<time>13:02</time></p>
+            <p class="chat__msg chat__msg--me">Спасибо, всё верно!<time>13:04 ✓✓</time></p>
+          </div>
+        </div>
+        <div class="hero__floor" aria-hidden="true"></div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 0.86 0 0.12">
+          <span class="v-label hero__label">АБ-Витамины · заказ по телефону</span>
+          <h1 class="v-display v-display--xl" data-v-kinetic="lines">Витамины для всей семьи с доставкой по Москве</h1>
+          <p class="v-lede">Закончилась баночка – позвоните, повторим заказ. Состав и противопоказания называем до оплаты, срок годности видно на фото заказа.</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="tel:+74999852524" rel="noopener">Заказать</a>
+            <a class="hero__tel" href="tel:+74999852524">или позвоните <b>8 499 985 25 24</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ЦЕНА БЕЗДЕЙСТВИЯ и ПОВОРОТ: витамины покупают не наугад -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#f2e7e2" id="poka" aria-label="Что мешает купить спокойно">
+      <div class="v-wrap">
+        <div class="poka__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Витамины покупают не наугад</h2>
+          <p class="v-body v-soft">Их пьют курсом, месяцами, часто всей семьёй. Три вещи, из-за которых заказ превращается в лотерею.</p>
+        </div>
+        <ul class="poka__rows" data-v-in data-v-stagger="90">
+          <li><h3>Непонятно, что в составе</h3><p>В карточке – красивое название и «для иммунитета». Дозировка, форма и противопоказания – мелким шрифтом на фото этикетки, которое с телефона не разобрать.</p></li>
+          <li><h3>Страшно нарваться на подделку или просрочку</h3><p>Баночка выглядит так же, а внутри неизвестно что. Или срок годности заканчивается через месяц, а курс рассчитан на три.</p></li>
+          <li><h3>Цена и сроки уплыли</h3><p>В каталоге одна сумма, при оформлении другая: доставка, упаковка, «товар закончился, есть аналог». Посылка идёт неделю, курс прерван.</p></li>
+        </ul>
+        <div class="turn" data-v-in data-v-in-self>
+          <span class="v-label">Поэтому</span>
+          <p class="turn__text">Состав, способ приёма и противопоказания пишем по каждой позиции до оплаты, срок годности показываем на фото собранного заказа, а цена в нашем ответе финальная.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2а · ЗНАНИЕ: витамины влияют друг на друга (выжимка из материала заказчика) -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#fbf6f3" id="vzaimodeystvie" aria-label="Как витамины влияют друг на друга">
+      <div class="v-wrap note">
+        <div class="note__copy" data-v-in data-v-stagger="80">
+          <span class="v-label">Полезно знать</span>
+          <h2 class="v-display v-display--md">Витамины влияют друг на друга</h2>
+          <p>Витамины и минералы реагируют друг с другом: одно вещество может усилить действие другого – или ослабить его вплоть до нуля. Поэтому сочетание витаминов лучше обсудить с врачом.</p>
+        </div>
+        <figure class="note__fig" data-v-reveal="up" data-v-reveal-at="0.1 0.42">
+          <img src="assets/vzaimodeystvie.webp" alt="Капсулы и таблетки из баночки рядом с апельсинами, лимоном, яблоками, смородиной и голубикой" width="1200" height="800" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 · ПОВОРОТ: заказ собирается (фирменный ход 1, веер карточек) -->
+    <section data-v-act="pin" data-v-span="2.4" data-v-drift="#f8f1ed" id="sborka" aria-label="Как собираем заказ">
+      <div data-v-stage>
+        <div class="sb">
+          <div class="sb__head" data-v-cue="0 1 0 0" data-v-rise="0">
+            <span class="v-label">Как собираем заказ</span>
+            <h2 class="v-display v-display--md">Заказ одним звонком, без корзины и регистрации</h2>
+          </div>
+
+          <div class="sb__rep">
+            <div data-v-cue="0 0.26 0 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>1 · Что нужно</span>
+              <h3>Назовите позицию с этикетки</h3>
+              <p>Закончилась привычная – продиктуйте название с баночки, найдём ту же. <b>Повторный заказ – одной фразой «как в прошлый раз».</b></p>
+            </div>
+            <div data-v-cue="0.27 0.51 0.05 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>2 · Состав</span>
+              <h3>Состав и противопоказания до оплаты</h3>
+              <p>Форма, дозировка, сколько в упаковке, кому нельзя – называем по телефону и присылаем текстом. <b>Что подойдёт именно вам, решает врач</b>, а не продавец.</p>
+            </div>
+            <div data-v-cue="0.52 0.76 0.05 0.05">
+              <span class="sb__step"><i aria-hidden="true"></i>3 · Срок и производитель</span>
+              <h3>Срок годности известен заранее</h3>
+              <p>Называем производителя и срок годности той партии, из которой соберём заказ. <b>Хватит на весь курс</b> – или скажем честно, что не хватит.</p>
+            </div>
+            <div data-v-cue="0.77 1 0.05 0">
+              <span class="sb__step"><i aria-hidden="true"></i>4 · Фото перед отправкой</span>
+              <h3>Фото собранного заказа – вам на телефон</h3>
+              <p>Фотографируем баночки так, чтобы были видны название и срок годности. <b>Едет то, что на фото</b>, а не «аналог».</p>
+            </div>
+          </div>
+
+          <div class="fan" aria-hidden="true">
+            <figure class="fan__card fan__card--3"><img src="assets/magnesium.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Магний · таблетки</figcaption></figure>
+            <figure class="fan__card fan__card--2"><img src="assets/omega.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Омега-3 · капсулы</figcaption></figure>
+            <figure class="fan__card fan__card--1"><img src="assets/vitd.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Витамин D · капсулы</figcaption></figure>
+            <figure class="fan__card fan__card--wrap"><img src="assets/wrap.webp" alt="" width="900" height="1200" loading="lazy" decoding="async"><figcaption>Собрано · коробка</figcaption></figure>
+            <p class="fan__legend">Позиции на фото – пример: витрину соберём из вашего ассортимента</p>
+          </div>
+
+          <div class="sb__after" data-v-cue="0.78 1 0.06 0">
+            <a class="v-btn" href="tel:+74999852524" rel="noopener">Заказать</a>
+            <span class="sb__hint">Не помните название – прочитайте его с этикетки, найдём ту же позицию</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ВЫБОР: популярные позиции -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f2e7e2" id="ceny" aria-label="Популярные позиции">
+      <div class="v-wrap price">
+        <div class="price__head" data-v-in data-v-in-self>
+          <h2 class="v-display v-display--lg">Популярные позиции</h2>
+          <p class="v-body">То, что берут чаще всего. Наличие и цену называем в ответе, и после подтверждения заказа она не меняется. Полный список – по телефону.</p>
+        </div>
+        <div data-v-in data-v-stagger="80">
+          <ul class="price__rows">
+            <li>
+              <h3>Витамин D3</h3>
+              <p>Капсулы или капли, несколько дозировок. Форму, дозировку и число капсул в упаковке называем по каждой позиции.</p>
+              <span class="sum v-nums">уточнить<small>цена – в ответе</small></span>
+            </li>
+            <li>
+              <h3>Омега-3</h3>
+              <p>Капсулы разных производителей. В ответе – сколько активного вещества в капсуле и на сколько дней хватит упаковки.</p>
+              <span class="sum v-nums">уточнить<small>цена – в ответе</small></span>
+            </li>
+            <li>
+              <h3>Магний и B6</h3>
+              <p>Таблетки и порошок. Состав, способ приёма и противопоказания пишем текстом до оплаты.</p>
+              <span class="sum v-nums">уточнить<small>цена – в ответе</small></span>
+            </li>
+          </ul>
+          <ul class="price__terms">
+            <li><b>Доставка</b><span>4 дня, стоимость – уточнить. Возим по Москве, самовывоз – проспект Мира, дом 85.</span></li>
+            <li><b>Цена финальная</b><span>После подтверждения заказа сумма не меняется. Чего-то нет в наличии – скажем сразу, замена только с вашего согласия.</span></li>
+            <li><b>Не лекарство</b><span>БАД не является лекарственным средством. Перед приёмом проконсультируйтесь с врачом.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · ДОКАЗАТЕЛЬСТВО: срок в заказе (фирменный ход 2, часы) -->
+    <section data-v-act="pin" data-v-span="2" data-v-drift="#fbf6f3" id="kchasu" aria-label="Как доставляем">
+      <div data-v-stage>
+        <div class="v-layer kc__img" data-v-parallax="-0.4">
+          <img src="assets/delivery.webp" alt="" width="1920" height="1080" loading="lazy" decoding="async">
+        </div>
+        <div class="kc__scrim" aria-hidden="true"></div>
+        <div class="kc">
+          <div class="kc__copy">
+            <div data-v-cue="0 1 0 0" data-v-rise="0">
+              <span class="v-label">Доставка</span>
+              <h2 class="v-display v-display--lg">Срок в заказе, а не «на днях»</h2>
+            </div>
+            <div class="kc__rep">
+              <div data-v-cue="0 0.34 0 0.06">
+                <h3>Вы звоните и говорите, что нужно</h3>
+                <p>Отвечаем составом, ценой и сроком доставки: 4 дня. Всё это вы знаете до оплаты.</p>
+              </div>
+              <div data-v-cue="0.36 0.66 0.06 0.06">
+                <h3>Перед отправкой: фото заказа</h3>
+                <p>Фотографируем собранные баночки со сроком годности. Что-то не так – меняем до отправки, а не извиняемся после.</p>
+              </div>
+              <div data-v-cue="0.68 1 0.06 0">
+                <h3>Заказ у вас в оговорённый срок</h3>
+                <p>Баночки едут в коробке, переложены бумагой, чтобы не побились. Как отследить доставку, сообщаем на ваш номер.</p>
+              </div>
+            </div>
+          </div>
+          <div class="clock" aria-hidden="true">
+            <i class="clock__tick clock__tick--big" style="--deg:0deg"></i><i class="clock__tick" style="--deg:30deg"></i><i class="clock__tick" style="--deg:60deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:90deg"></i><i class="clock__tick" style="--deg:120deg"></i><i class="clock__tick" style="--deg:150deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:180deg"></i><i class="clock__tick" style="--deg:210deg"></i><i class="clock__tick" style="--deg:240deg"></i>
+            <i class="clock__tick clock__tick--big" style="--deg:270deg"></i><i class="clock__tick" style="--deg:300deg"></i><i class="clock__tick" style="--deg:330deg"></i>
+            <span class="clock__num clock__num--12">12</span><span class="clock__num clock__num--3">3</span><span class="clock__num clock__num--6">6</span><span class="clock__num clock__num--9">9</span>
+            <span class="clock__mark clock__mark--photo"><i></i><b>фото вам</b></span>
+            <span class="clock__mark clock__mark--door"><i></i><b>у вас</b></span>
+            <i class="clock__hand clock__hand--h"></i>
+            <i class="clock__hand clock__hand--m"></i>
+            <i class="clock__pin"></i>
+            <p class="kc__legend">Стрелка идёт к доставке, пока вы листаете</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · ПОВТОРНЫЙ ЗАКАЗ: закончилась баночка -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#f2e7e2" id="povtor" aria-label="Повторить заказ">
+      <div class="v-wrap ev">
+        <figure class="ev__fig" data-v-reveal="up" data-v-reveal-at="0.12 0.46" data-v-tilt="4">
+          <img src="assets/repeat.webp" alt="Почти пустая баночка витаминов и стакан воды на кухонной полке" width="1200" height="1600" loading="lazy" decoding="async">
+          <figcaption>Курс подходит к концу – повторим прошлый заказ</figcaption>
+        </figure>
+        <div class="v-stack" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--md">Закончилась баночка: повторим одним звонком</h2>
+          <ul class="ev__facts">
+            <li><strong>Как в прошлый раз</strong><span>Скажите «как в прошлый раз» – соберём тот же заказ: те же позиции, та же дозировка. Цену и срок годности подтвердим перед отправкой.</span></li>
+            <li><strong>Заказ на всю семью</strong><span>Взрослым и детям, разные формы – в один заказ и одну коробку. По каждой позиции состав и противопоказания текстом.</span></li>
+            <li><strong>Напоминание о курсе</strong><span>Если попросите, напомним, когда курс подходит к концу. Не попросите – не беспокоим.</span></li>
+          </ul>
+          <p class="ev__hint"><b>Мы не назначаем БАДы.</b> Покажите рекомендацию врача – найдём позицию с нужным составом и дозировкой.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7 · ДЕЙСТВИЕ: позвоните и скажите, что закончилось -->
+    <section data-v-act="flow" data-v-drift="#f8f1ed" id="zakaz" aria-label="Заказать">
+      <div class="close" data-v-spotlight>
+        <div class="close__inner">
+          <div data-v-in data-v-stagger="80">
+            <h2 class="v-display v-display--lg">Позвоните и скажите, что закончилось</h2>
+            <p class="v-lede">Ответим составом, ценой и сроком доставки. Фото собранного заказа со сроком годности пришлём вам на телефон.</p>
+            <div class="close__cta">
+              <a class="v-btn" href="tel:+74999852524" rel="noopener" data-v-magnet="0.22" data-v-rise="0">Заказать</a>
+              <a class="close__tel" href="tel:+74999852524">8 499 985 25 24</a>
+            </div>
+            <p class="close__hint">Не помните название – прочитайте его с этикетки баночки, этого хватит, чтобы найти ту же позицию.</p>
+          </div>
+          <div class="close__meta" data-v-in data-v-stagger="60">
+            <span><b>Принимаем заказы</b>с 9:00 до 21:00</span>
+            <span><b>Доставка</b>4 дня · по Москве</span>
+            <span data-slot-optional><b>Самовывоз</b>проспект Мира, дом 85, Москва</span>
+          </div>
+        </div>
+        <footer class="foot">
+          <span>АБ-Витамины · Москва</span>
+          <span data-slot-optional>ООО «АБ-Витамины» · ИНН 123456789</span>
+          <span class="foot__bad">БАД не является лекарственным средством</span>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  // На телефоне пины короче: data-v-span из CSS не поменять, правим атрибут до монтирования.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.6');
+    document.getElementById('sborka').setAttribute('data-v-span', '2.2');
+    document.getElementById('kchasu').setAttribute('data-v-span', '1.8');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки, чтобы текст секций не просвечивал.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+  // Фирменные ходы (веер в #sborka и часы в #kchasu) ведёт CSS от --v-p акта, скрипта им не нужно.
+</script>
+</body>
+</html>
